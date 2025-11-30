@@ -1,27 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
+import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/Home/Home.tsx";
-import Shop from "./pages/Shop/Shop.tsx";
-import Contact from "./pages/Contact.tsx";
-import About from "./pages/About.tsx";
-import Faq from "./pages/Faq.tsx";
-import Error from "./pages/Error.tsx";
+import Home from "./pages/Home/Home";
+import Shop from "./pages/Shop/Shop";
+import Contact from "./pages/Contact";
+import About from "./pages/About";
+import Faq from "./pages/Faq";
+import Error from "./pages/Error";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { CartProvider } from "./context/CartContext.tsx";
+import { CartProvider } from "./context/CartContext";
 
 // 👜 Bags By Type Pages
-import BagsByType from "./pages/BagsByType.tsx";
-import NonWovenBags from "./pages/BagTypes/NonWovenBags.tsx";
-import JuteBags from "./pages/BagTypes/JuteBags.tsx";
-import CottonBags from "./pages/BagTypes/CottonBags.tsx";
-import PaperBags from "./pages/BagTypes/PaperBags.tsx";
-import LoopHandleBags from "./pages/BagTypes/LoopHandleBags.tsx";
-import DCutBags from "./pages/BagTypes/DCutBags.tsx";
-import BoxTypeBags from "./pages/BagTypes/BoxTypeBags.tsx";
-import DesignYourBags from "./pages/DesignYourBags.tsx"; 
+import BagsByType from "./pages/BagsByType";
+import NonWovenBags from "./pages/BagTypes/NonWovenBags";
+import JuteBags from "./pages/BagTypes/JuteBags";
+import CottonBags from "./pages/BagTypes/CottonBags";
+import PaperBags from "./pages/BagTypes/PaperBags";
+import LoopHandleBags from "./pages/BagTypes/LoopHandleBags";
+import DCutBags from "./pages/BagTypes/DCutBags";
+import BoxTypeBags from "./pages/BagTypes/BoxTypeBags";
+import DesignYourBags from "./pages/DesignYourBags"; 
 
 // ✅ Create Router
 const router = createBrowserRouter([

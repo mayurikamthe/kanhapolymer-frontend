@@ -32,7 +32,7 @@ const DesignYourBags: React.FC = () => {
       fd.append("size", formData.size);
       if (logoFile) fd.append("logo", logoFile); // 'logo' matches multer fieldname
 
-      const res = await fetch("https://kanhapolymer.onrender.com/api/design", {
+      const res = await fetch("kanhapolymer-backend.vercel.app", {
         method: "POST",
         body: fd
       });
